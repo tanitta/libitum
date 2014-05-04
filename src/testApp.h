@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-#include "CodeBox.h"
+#include "ChordBox.h"
 class testApp : public ofBaseApp{
 
 	public:
@@ -19,5 +19,6 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+		vector< vector<libitum::ChordBox> > chordBoxes;
 		
 };

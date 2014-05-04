@@ -3,6 +3,13 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	ofBackground(255);
+	for (int i = 0; i < chordBoxes.size(); ++i)
+	{
+		for (int j = 0; j < chordBoxes[i].size(); ++j)
+		{
+			chordBoxes[i][j] = libitum::ChordBox();
+		}
+	}
 }
 
 //--------------------------------------------------------------
@@ -12,7 +19,13 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-
+	for (int i = 0; i < chordBoxes.size(); ++i)
+	{
+		for (int j = 0; j < chordBoxes[i].size(); ++j)
+		{
+			chordBoxes[i][j].draw();
+		}
+	}
 }
 
 //--------------------------------------------------------------

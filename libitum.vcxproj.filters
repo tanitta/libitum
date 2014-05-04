@@ -31,7 +31,7 @@
     <ClCompile Include="..\..\..\addons\ofxMidi\libs\rtmidi\RtMidi.cpp">
       <Filter>addons\ofxMidi</Filter>
     </ClCompile>
-    <ClCompile Include="src\CodeBox.cpp">
+    <ClCompile Include="src\ChordBox.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -75,7 +75,7 @@
     <ClInclude Include="..\..\..\addons\ofxMidi\libs\rtmidi\RtMidi.h">
       <Filter>addons\ofxMidi</Filter>
     </ClInclude>
-    <ClInclude Include="src\CodeBox.h">
+    <ClInclude Include="src\ChordBox.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

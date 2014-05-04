@@ -1,17 +1,22 @@
 #include "ofMain.h"
 namespace libitum{
-	class CodeBox
+	class ChordBox
 	{
 	public:
-		CodeBox();
-		~CodeBox();
+		ChordBox();
+		~ChordBox();
 		void setup(int genInt);
 		void update();
 		void draw();	
 		
 		void SetPos(ofPoint);
-		void SetScale();
-		void SetKey();
+		void SetScale(vector<int> scale);
+		void SetKey(int key);
+		
+		void mouseMoved(int x, int y );
+		
+		// string GetChordName();
+		// void drawGenInt(int x, int y);
 		
 		int genSounds;
 		int genInternal;
