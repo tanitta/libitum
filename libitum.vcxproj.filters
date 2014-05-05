@@ -34,6 +34,9 @@
     <ClCompile Include="src\ChordBox.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Scale.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\testApp.h">
@@ -76,6 +79,9 @@
       <Filter>addons\ofxMidi</Filter>
     </ClInclude>
     <ClInclude Include="src\ChordBox.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scale.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

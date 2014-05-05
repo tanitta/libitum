@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ChordBox.h"
+#include "Scale.h"
 class testApp : public ofBaseApp{
 
 	public:
@@ -21,4 +22,7 @@ class testApp : public ofBaseApp{
 		
 		vector< vector<libitum::ChordBox> > chordBoxes;
 		
+		vector<int> GetScale(int index);
+		vector<libitum::Scale> scales;
+		// vector< vector<int> > scales;
 };

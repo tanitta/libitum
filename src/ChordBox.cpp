@@ -2,6 +2,8 @@
 namespace libitum{
 	ChordBox::ChordBox(){
 		genSounds = 3;
+		sizeH = 64;
+		sizeW = 128;
 	};
 	ChordBox::~ChordBox(){};
 	
@@ -9,7 +11,15 @@ namespace libitum{
 		genInternal = genInt;
 	};
 	void ChordBox::update(){};
-	void ChordBox::draw(){};
+	void ChordBox::draw(){
+		ofFill();
+		ofSetColor(255);
+		ofRect(pos, sizeW, sizeH);
+		
+		ofNoFill();
+		ofSetColor(0);
+		ofRect(pos, sizeW, sizeH);
+	};
 	
 	//boxの座標を設定．push後すぐに行うこと
 	void ChordBox::SetPos(ofPoint point){
