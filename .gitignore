@@ -1,9 +1,24 @@
+<<<<<<< HEAD
 lib/
 target/
 project/
 *.log
 *.sublime-workspace
 *.sublime-project
+=======
+trunk/
+trunk/
+trunk/
+
+bin/
+obj/
+
+/.gitattributes
+*.log
+*.sublime-workspace
+*.sublime-project
+*.dmp
+>>>>>>> 66b6009cf1e0c0171cc9083f10f5162ad8ebe82c
 
 
 #################
