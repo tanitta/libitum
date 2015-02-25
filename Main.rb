@@ -54,7 +54,7 @@ class Key < Struct.new(:color)
 				Ncurses.translate(0,0)
 				str = "▉▉"
 			else
-				Ncurses.translate(2,0)
+				Ncurses.translate(3,0)
 				str = "░░"
 			end
 			if !is_enable then
@@ -63,6 +63,8 @@ class Key < Struct.new(:color)
 			Ncurses.movel(0,0)
 			Ncurses.addstr(str)
 			Ncurses.movel(1,0)
+			Ncurses.addstr(str)
+			Ncurses.movel(2,0)
 			Ncurses.addstr(str)
 		Ncurses.pop_matrix
 	end
@@ -105,6 +107,9 @@ class Libitum < BaseProcess
 		# 0:C
 		@scale_book = {
 			major: [0,2,4,5,7,9,11],
+			blue_note: [0,2,3,4,5,6,7,9,10,11],
+			# blue_note: [0,2,3,5,6,9,10],
+			rock_chord: [0,3,5,7,10],
 			natural_minor: [0,2,3,5,7,8,10],
 			harmonic_minor: [0,2,3,5,7,8,11],
 			melodic_minor: [0,2,3,5,7,9,11],
@@ -119,7 +124,7 @@ class Libitum < BaseProcess
 	
 	def draw
 		# @keyboard.draw(@scale_book[:major], @key)
-		@keyboard.draw(@scale_book[:natural_minor], 8)
+		@keyboard.draw(@scale_book[:blue_note], 8)
 	end
 end
 
